@@ -18,32 +18,54 @@ namespace WeeklyChallenges
 
         public double Subtract(double minuend, double subtrahend)
         {
-            throw new NotImplementedException();
+            double subtract = minuend - subtrahend;
+            return subtract;
         }
 
         public int Add(int number1, int number2)
         {
-            throw new NotImplementedException();
+            int add = number1 + number2;
+            return add;
         }
 
         public int GetSmallestNumber(int number1, int number2)
         {
-            throw new NotImplementedException();
+            int getsmallestnum;
+            if (number1 > number2)
+            {
+                 getsmallestnum = number2;
+            }
+            else
+            {
+                getsmallestnum = number1;
+            }
+           /* else
+            {
+                getsmallestnum = 0;
+            }*/
+            return getsmallestnum;
         }
 
         public long Multiply(long factor1, long factor2)
         {
-            throw new NotImplementedException();
+            return factor1 * factor2;
         }
 
         public string GetGreeting(string nameOfPerson)
-        {
-            throw new NotImplementedException();
+        { string defa = "";
+            if (nameOfPerson == null)
+            {
+                defa = "Hello!";
+            }
+            else {
+                defa = "Hello";
+            }
+            return $"{defa}{nameOfPerson}!"; 
         }
 
         public string GetHey()
         {
-            throw new NotImplementedException();
+            return "HEY!";
         }
     }
 }
